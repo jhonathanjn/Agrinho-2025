@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans', sans-serif;
+    color: white;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#conteudoExpandido {
+    opacity: 0; 
+    max-height: 0; 
+    overflow: hidden;
+    transition: opacity 0.8s ease, max-height 0.8s ease-out; 
+}
+
+nav a.active {
+    background-color: #009620;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+nav{
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: aqua;
+    border-radius: 20px;
+}
+
+#Inicio{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 100vh;
+    background-image: url("../assets/colheitadeira.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 25px solid #0F2107;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.image img {
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5)); 
+    filter: brightness(70%);
+    border-radius: 20px;
+    border: 5px solid green;
+    transition: 0.3s;
+}
+
+
+#Inicio img:hover{
+    filter: brightness(100%);
+}
+
+#Inicio button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    filter: brightness(70%);
+    border-radius: 10px;
+}
+
+#Inicio button:hover{
+    background-color: white;
+    color: black;
+    filter: brightness(100%);
+
+}
+
+#tecnologia{
+    padding: 50px;
+    background-color: #2196F3;
+    text-align: center;
+    height: 120vh;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    border-top: 50px solid #0F2107;
+}
+
+#tecnologia img{
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5)); 
+    border-radius: 20px;
+    justify-content:space-between;
+}
+
+.tecnologias-img img {
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5)); 
+    filter: brightness(70%);
+    border-radius: 20px;
+    border: 5px solid green;
+    transition: 0.3s;
+}
+
+#tecnologia button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    filter: brightness(70%);
+    border-radius: 10px;
+}
+
+#tecnologia button:hover{
+    background-color: white;
+    color: black;
+    filter: brightness(100%);
+
+}
+
+#tecnologia h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#tenologia p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: auto;
+}
+
+#galeria{
+    padding: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    height: 100vh;
+    border-top: 50px solid #3A3A3A;
+}
+
+#galeria h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#galeria p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.galeria-imagens img{
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5)); 
+    border-radius: 20px;
+    transition: 0.3s;
+    
+}
+
+.galeria-imagens{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#galeria button{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#galeria button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+#blog{
+    padding: 50px;
+    background-color: #8D6E63;
+    text-align: center;
+    height: 100vh;
+    border-top: 50px solid #D6BFA8;
+    margin-top: 100px;
+}
+
+#blog h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+#blog p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+#blog button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    filter: brightness(70%);
+    border-radius: 10px;
+}
+
+#blog button:hover{
+    background-color: white;
+    color: black;
+    filter: brightness(100%);
+
+}
+
+#contato{
+    padding: 50px;
+    background-color:#F5F5F5;
+    text-align: center;
+    height: 100vh;
+    border-top: 50px solid #C0C0C0;
+}
+
+#contato h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#contato p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#contato label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#contato input{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+}
+
+#contato textarea{
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+}
+
+#contato button{
+    background-color: green;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
